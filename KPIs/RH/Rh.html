@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>KPIs – RH & Responsables de service</title>
+  <link rel="stylesheet" href="/Proj.pfa/KPIs/k.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<main class="kpi-page">
+  <header class="service-header fadeIn">
+    <div>
+      <h1>RH & Responsables de service</h1>
+      <p>Les Ressources Humaines et responsables de service veillent à l’intégration, au développement et à la fidélisation des talents, tout en mesurant la satisfaction interne et des stagiaires. <br>Le tableau de bord ci-dessous est basé sur des données fictives, en raison du manque de KPIs disponibles.</p>
+      <span class="month-tag">Mois analysé : Juillet 2025</span>
+    </div>
+    <img src="/Proj.pfa/KPIs/images/WhatsApp Image 2025-08-24 at 18.12.50.jpeg" alt="Ressources humaines" />
+  </header>
+
+  <section class="section slideUp">
+    <h2>KPIs du mois (Données fictives)</h2>
+    <div class="kpi-cards">
+      <div class="kpi-card"><div class="kpi-icon">🆕</div><div class="kpi-title">Intégration nouveaux employés</div><div class="kpi-value" id="integration">—</div></div>
+      <div class="kpi-card"><div class="kpi-icon">🔄</div><div class="kpi-title">Turnover</div><div class="kpi-value" id="turnover">—</div></div>
+      <div class="kpi-card"><div class="kpi-icon">😊</div><div class="kpi-title">Satisfaction stagiaires</div><div class="kpi-value" id="satStag">—</div></div>
+      <div class="kpi-card"><div class="kpi-icon">🏢</div><div class="kpi-title">Satisfaction interne</div><div class="kpi-value" id="satInterne">—</div></div>
+    </div>
+
+    <div class="charts" style="margin-top:12px;">
+      <div class="chart-card"><h3>Satisfaction (Camembert)</h3><canvas id="satisfPie"></canvas></div>
+      <div class="chart-card"><h3>Turnover par département</h3><canvas id="turnBar"></canvas></div>
+    </div>
+  </section>
+
+  <section class="section fadeIn">
+    <h2>Formations recommandées</h2>
+    <div class="formations">
+      <table class="table">
+        <thead><tr><th>Formation</th><th>Justification</th><th>Criticité</th></tr></thead>
+        <tbody id="formations-body"></tbody>
+      </table>
+    </div>
+  </section>
+  <section class="kpi-navigation fadeIn">
+  <a href="/Proj.pfa/KPIs/Magasin/mag.html" class="nav-btn prev">
+    ← Précédent : Magasin
+  </a>
+  <a href="/Proj.pfa/KPIs/Page d'acueil/Pa.html" class="nav-btn next">
+    Suivant : Page d'acueils →
+  </a>
+</section>
+<div class="back-home">
+  <a href="/Proj.pfa/KPIs/Page d'acueil/Pa.html">← Retour à l’accueil</a>
+</div>
+</main>
+
+<script src="Rh.js"></script>
+</body

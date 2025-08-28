@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow">
+  <title>KPIs – Logistique</title>
+  <link rel="stylesheet" href="/Proj.pfa/KPIs/k.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <main class="kpi-page">
+    <header class="service-header fadeIn">
+      <div>
+        <h1>Logistique</h1>
+        <p>La Logistique assure la disponibilité des flux entrants/sortants, l’OTIF client et l’optimisation des stocks tout en réduisant les délais de traitement. C'est l'acteur qui relie l'entreprise en amont avec le fournisseur et en aval avec le client. Il doit assure la bonne quantité en bon endroit et au bon moment. </p>
+        <span class="month-tag">Mois analysé: Juillet 2025</span>
+      </div>
+      <img src="/Proj.pfa/KPIs/images/Logistique.png" alt="Logistique entrepôt" />
+    </header>
+
+    <section class="section slideUp">
+      <h2>KPIs du mois</h2>
+      <div class="kpi-cards">
+        <div class="kpi-card"><div class="kpi-icon">📦</div><div class="kpi-title">Réclamations clients</div><div class="kpi-value" id="claims">—</div><div class="kpi-sub">Total par mois</div></div>
+        <div class="kpi-card"><div class="kpi-icon">⏲️</div><div class="kpi-title">OTIF</div><div class="kpi-value" id="otif">—</div><div class="kpi-sub">Excellent</div></div>
+        <div class="kpi-card"><div class="kpi-icon">🚨</div><div class="kpi-title">Ruptures MP / PF</div><div class="kpi-value" id="ruptures">—</div><div class="kpi-sub">Matières / Produits finis</div></div>
+        <div class="kpi-card"><div class="kpi-icon">🕒</div><div class="kpi-title">Délai traitement commandes</div><div class="kpi-value" id="leadtime">—</div><div class="kpi-sub">+ le temps de l'ADV </div></div>
+        <div class="kpi-card"><div class="kpi-icon">💻</div><div class="kpi-title">Maîtrise outils numériques</div><div class="kpi-value" id="num">—</div><div class="kpi-sub">Excel / BI / Sage X3</div></div>
+      </div>
+
+      <div class="charts" style="margin-top:12px;">
+        <div class="chart-card"><h3>Ruptures & OTIF par semaine (Données fictives)</h3><canvas id="mixChart"></canvas></div>
+      </div>
+    </section>
+
+    <section class="section fadeIn">
+      <h2>Formations recommandées</h2>
+      <div class="formations">
+        <table class="table">
+          <thead><tr><th>Formation</th><th>Justification</th><th>Criticité</th></tr></thead>
+          <tbody id="formations-body"></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="kpi-navigation fadeIn">
+  <a href="/Proj.pfa/KPIs/QHSE/qhse.html" class="nav-btn prev">
+    ← Précédent : QHSE
+  </a>
+  <a href="/Proj.pfa/KPIs/Electrique/elec.html" class="nav-btn next">
+    Suivant : Electrique et Automatisation →
+  </a>
+</section>
+  <div class="back-home">
+  <a href="/Proj.pfa/KPIs/Page d'acueil/Pa.html">← Retour à l’accueil</a>
+</div>
+  </main>
+  <script src="log.js"></script>
+</body>
+</html>

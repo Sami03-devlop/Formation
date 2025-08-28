@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>KPIs – Production</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/Proj.pfa/KPIs/k.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <main class="kpi-page">
+    <header class="service-header fadeIn">
+      <div>
+        <h1>Production</h1>
+        <p>Le service Production pilote la performance de la chaîne de fabrication, l’atteinte des objectifs de cadence, la qualité du processus, la conformité avec les normes de production et l’optimisation des ressources humaines et matérielles.</p>
+        <span class="month-tag">Mois analysé: Juillet 2025</span>
+      </div>
+      <img src="/Proj.pfa/KPIs/images/Procduction.png" alt="Ligne de production" />
+    </header>
+
+    <section class="section slideUp">
+      <h2>KPIs du mois</h2>
+      <div class="kpi-cards">
+        <div class="kpi-card">
+          <div class="kpi-icon">📈</div>
+          <div class="kpi-title">Productivité par équipe</div>
+          <div class="kpi-value" id="prod-values">—</div>
+          <div class="kpi-sub">15 Wagon pour chaque équipe</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon">🧠</div>
+          <div class="kpi-title">Maîtrise des moyennes numériques</div>
+          <div class="kpi-value" id="num-prod">—</div>
+          <div class="kpi-sub"><br>Score interne</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon">🔁</div>
+          <div class="kpi-title">Temps de changement de série</div>
+          <div class="kpi-value" id="changeover">—</div>
+          <div class="kpi-sub"><br>2h pour l'extrudeuse et 9min pour l'emballage !!</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon">👥</div>
+          <div class="kpi-title">Polyvalence moyenne / équipe</div>
+          <div class="kpi-value" id="poly-prod">—</div>
+          <div class="kpi-sub">Nbr de Polyvalent . Nbr Total</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon">⚙️</div>
+          <div class="kpi-title">Délai de standardisation des actions correctives</div>
+          <div class="kpi-value" id="delai-corr">—</div>
+          <div class="kpi-sub">Pour le monoblock et le four (les plus critiques) </div>
+        </div>
+      </div>
+
+      <div class="charts" style="margin-top:12px;">
+        <div class="chart-card">
+          <h3>Productivité par équipe (Barres)</h3>
+          <canvas id="prodBar"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Répartition de la production (Camembert)</h3>
+          <canvas id="prodPie"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fadeIn">
+      <h2>Formations recommandées</h2>
+      <div class="formations">
+        <table class="table">
+          <thead><tr><th>Formation</th><th>Justification</th><th>Criticité</th></tr></thead>
+          <tbody id="formations-body"></tbody>
+        </table>
+      </div>
+    </section>
+     <section class="kpi-navigation fadeIn">
+  <a href="/Proj.pfa/KPIs/maintenance/m.html" class="nav-btn prev">
+    ← Précédent : Maintenance / TPM
+  </a>
+  <a href="/Proj.pfa/KPIs/QHSE/qhse.html" class="nav-btn next">
+    Suivant : QHSE →
+  </a>
+</section>
+  <div class="back-home">
+  <a href="/Proj.pfa/KPIs/Page d'acueil/Pa.html">← Retour à l’accueil</a>
+</div>
+  </main>
+  <script src="prd.js"></script>
+</body>
+</html>

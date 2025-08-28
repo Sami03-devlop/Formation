@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow">
+  <title>KPIs – Méthodes</title>
+  <link rel="stylesheet" href="/Proj.pfa/KPIs/k.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<main class="kpi-page">
+  <header class="service-header fadeIn">
+    <div>
+      <h1>Méthodes</h1>
+      <p>Le service Méthodes définit, optimise et standardise les gammes, nomenclatures et temps standards pour garantir l’efficacité et la qualité des processus industriels. <br> Le tableau de bord ci-dessous est basé sur des données fictives, en raison du manque de KPIs disponibles.</p>
+      <span class="month-tag">Mois analysé : Juillet 2025</span>
+    </div>
+    <img src="/Proj.pfa/KPIs/images/usinemap.png" alt="Bureau méthodes" />
+  </header>
+
+  <section class="section slideUp">
+    <h2>KPIs du mois (Données fictives)</h2>
+    <div class="kpi-cards">
+      <div class="kpi-card"><div class="kpi-icon">📦</div><div class="kpi-title">Moyenne des gammes opératoires par poste</div><div class="kpi-value" id="gammeMoy">—</div><div class="kpi-sub">Non calculé !!</div></div>
+      <div class="kpi-card"><div class="kpi-icon">📦</div><div class="kpi-title">Moyenne des nomenclatures par machine</div><div class="kpi-value" id="nomMoy">—</div><div class="kpi-sub">Non calculé !!</div></div>
+      <div class="kpi-card"><div class="kpi-icon">⏱️</div><div class="kpi-title">Écart moyen temps réel vs standard</div><div class="kpi-value" id="ecartTemps">—</div><div class="kpi-sub">Non calculé !!</div></div>
+    </div>
+    <div class="charts" style="margin-top:12px;">
+      <div class="chart-card"><h3>Comparaison temps standard / réel</h3><canvas id="cmpChart"></canvas></div>
+    </div>
+  </section>
+
+  <section class="section fadeIn">
+    <h2>Formations recommandées</h2>
+    <div class="formations">
+      <table class="table">
+        <thead><tr><th>Formation</th><th>Justification</th><th>Criticité</th></tr></thead>
+        <tbody id="formations-body"></tbody>
+      </table>
+    </div>
+  </section>
+  <section class="kpi-navigation fadeIn">
+  <a href="/Proj.pfa/KPIs/Electrique/elec.html" class="nav-btn prev">
+    ← Précédent : Electrique & Automatisation
+  </a>
+  <a href="/Proj.pfa/KPIs/Magasin/mag.html" class="nav-btn next">
+    Suivant : Magasin →
+  </a>
+</section>
+  <div class="back-home">
+  <a href="/Proj.pfa/KPIs/Page d'acueil/Pa.html">← Retour à l’accueil</a>
+</div>
+</main>
+<script src="mét.js"></script>
+</body>
+</html>

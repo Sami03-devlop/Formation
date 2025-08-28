@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow">
+  <title>KPIs – QHSE</title>
+  <link rel="stylesheet" href="/Proj.pfa/KPIs/k.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <main class="kpi-page">
+    <header class="service-header fadeIn">
+      <div>
+        <h1>QHSE</h1>
+        <p>Le service QHSE a comme objectifs génerals le maîtrise des risques, la conformité aux normes de qualité ISO 9001, de sécurité ISO 45001 et d'envirenement ISO 14001. Il promeut également une véritable culture de qualité et de sécurité, intégrée dans l’ensemble des étapes du processus de fabrication. </p>
+        <span class="month-tag">Mois analysé: Juillet 2025</span>
+      </div>
+      <img src="/Proj.pfa/KPIs/images/Qualité.png" alt="QHSE sécurité" />
+    </header>
+
+    <section class="section slideUp">
+      <h2>KPIs du mois</h2>
+      <div class="kpi-cards">
+        <div class="kpi-card"><div class="kpi-icon">🩺</div><div class="kpi-title">Accidents / mois</div><div class="kpi-value" id="accidents">—</div><div class="kpi-sub">Trop élevé !!</div></div>
+        <div class="kpi-card"><div class="kpi-icon">💻</div><div class="kpi-title">Maîtrise outils numériques</div><div class="kpi-value" id="num">—</div><div class="kpi-sub">Scort Interne : 75% </div></div>
+        <div class="kpi-card"><div class="kpi-icon">📋</div><div class="kpi-title">Non-conformités (dus au personnel)</div><div class="kpi-value" id="nc-total">—</div><div class="kpi-sub">Répartition par cause</div></div>
+        <div class="kpi-card"><div class="kpi-icon">🛡️</div><div class="kpi-title">Conformité au norme ISO 9001</div><div class="kpi-value" id="iso">—</div><div class="kpi-sub">Objectif >= 80 %</div></div>
+        </div>
+
+      <div class="charts" style="margin-top:12px;">
+        <div class="chart-card"><h3>Non-conformités par cause (Histogramme)</h3><canvas id="ncBar"></canvas></div>
+        <div class="chart-card"><h3>Jauge conformité ISO</h3><canvas id="isoGauge"></canvas></div>
+      </div>
+    </section>
+
+    <section class="section fadeIn">
+      <h2>Formations recommandées</h2>
+      <div class="formations">
+        <table class="table">
+          <thead><tr><th>Formation</th><th>Justification</th><th>Criticité</th></tr></thead>
+          <tbody id="formations-body"></tbody>
+        </table>
+      </div>
+    </section>
+     <section class="kpi-navigation fadeIn">
+  <a href="/Proj.pfa/KPIs/Production/prd.html" class="nav-btn prev">
+    ← Précédent : Production
+  </a>
+  <a href="/Proj.pfa/KPIs/Logistique/log.html" class="nav-btn next">
+    Suivant : Logistique →
+  </a>
+</section>
+  </main>
+  <div class="back-home">
+  <a href="/Proj.pfa/KPIs/Page d'acueil/Pa.html">← Retour à l’accueil</a>
+</div>
+  <script src="qhse.js"></script>
+</body>
+</html>

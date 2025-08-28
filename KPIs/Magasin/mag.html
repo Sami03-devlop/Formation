@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>KPIs – Magasin</title>
+  <link rel="stylesheet" href="/Proj.pfa/KPIs/k.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<main class="kpi-page">
+  <header class="service-header fadeIn">
+    <div>
+      <h1>Magasin</h1>
+      <p>Le service Magasin gère les stocks, prépare les commandes internes et Il assure la disponibilité des fournitures internes (fournitures de bureau, pièces de rechange, etc.) ainsi que la gestion des stocks d’emballage, rendant le flux intern plus fluide. <br>Le tableau de bord ci-dessous est basé sur des données fictives, en raison du manque de KPIs disponibles.</p>
+      <span class="month-tag">Mois analysé : Juillet 2025</span>
+    </div>
+    <img src="/Proj.pfa/KPIs/images/magasin.webp" alt="Magasin industriel" />
+  </header>
+
+  <section class="section slideUp">
+    <h2>KPIs du mois (Données fictives)</h2>
+    <div class="kpi-cards">
+      <div class="kpi-card"><div class="kpi-icon">🚨</div><div class="kpi-title">Ruptures / mois</div><div class="kpi-value" id="ruptures">—</div></div>
+      <div class="kpi-card"><div class="kpi-icon">⏱️</div><div class="kpi-title">Délai préparation commandes</div><div class="kpi-value" id="delaiPrep">—</div></div>
+      <div class="kpi-card"><div class="kpi-icon">📊</div><div class="kpi-title">Écart inventaire moyen</div><div class="kpi-value" id="ecartInv">—</div></div>
+      <div class="kpi-card"><div class="kpi-icon">💻</div><div class="kpi-title">Maîtrise outils numériques</div><div class="kpi-value" id="numTools">—</div></div>
+    </div>
+
+    <div class="charts" style="margin-top:12px;">
+      <div class="chart-card"><h3>Ruptures par catégorie</h3><canvas id="ruptBar"></canvas></div>
+      <div class="chart-card"><h3>Jauge écart inventaire</h3><canvas id="invGauge"></canvas></div>
+    </div>
+  </section>
+
+  <section class="section fadeIn">
+    <h2>Formations recommandées</h2>
+    <div class="formations">
+      <table class="table">
+        <thead><tr><th>Formation</th><th>Justification</th><th>Criticité</th></tr></thead>
+        <tbody id="formations-body"></tbody>
+      </table>
+    </div>
+  </section>
+  <section class="kpi-navigation fadeIn">
+  <a href="/Proj.pfa/KPIs/Méthode/mét.html" class="nav-btn prev">
+    ← Précédent : Méthode
+  </a>
+  <a href="/Proj.pfa/KPIs/RH/Rh.html" class="nav-btn next">
+    Suivant : RH →
+  </a>
+</section>
+  <div class="back-home">
+  <a href="/Proj.pfa/KPIs/Page d'acueil/Pa.html">← Retour à l’accueil</a>
+</div>
+</main>
+<script src="mag.js"></script>
+</body>
+</html>

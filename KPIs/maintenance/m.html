@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow">
+  <title>KPIs – Maintenance</title>
+  <link rel="stylesheet" href="/Proj.pfa/KPIs/k.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <main class="kpi-page">
+    <header class="service-header fadeIn">
+      <div>
+        <h1>Maintenance / TPM</h1>
+        <p>Le service Maintenance en génerale garantit la disponibilité des équipements, réduit les arrêts non planifiés et sécurise les interventions par des stratégies préventives, conditionnelles et correctives optimisées.</p>
+        <span class="month-tag">Mois analysé: Juillet 2025</span>
+      </div>
+      <img src="/Proj.pfa/KPIs/images/TPM.png" alt="Maintenance industrielle">
+    </header>
+
+    <section class="section slideUp">
+      <h2>KPIs du mois</h2>
+      <div class="kpi-cards">
+        <div class="kpi-card">
+          <div class="kpi-icon">⏱️</div>
+          <div class="kpi-title">MTTR moyen / machine</div>
+          <div class="kpi-value" id="mttr-val">—</div>
+          <div class="kpi-sub">Objectif ≤ 30 min</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon">✅</div>
+          <div class="kpi-title">Taux de disponibilité (zones)</div>
+          <div class="kpi-value" id="dispo-val">—</div>
+          <div class="kpi-sub">Excellent</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon">🛠️</div>
+          <div class="kpi-title">Interventions correctives</div>
+          <div class="kpi-value" id="corr-val">—</div>
+          <div class="kpi-sub">Maintenance préventive !!</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon">👥</div>
+          <div class="kpi-title">Polyvalence moyenne / shift</div>
+          <div class="kpi-value" id="poly-val">—</div>
+          <div class="kpi-sub">Nbr de Polyvalent . Nbr Total</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon">📊</div>
+          <div class="kpi-title">Maîtrise des moyennes numériques</div>
+          <div class="kpi-value" id="num-val">—</div>
+          <div class="kpi-sub">Objectif > 70 %</div>
+        </div>
+      </div>
+
+      <div class="charts" style="margin-top:12px;">
+        <div class="chart-card">
+          <h3>Écart entre MTTR réel et MTTR cible 7% </h3>
+          <canvas id="mttrGauge"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Écart entre Disponibilité réel et cible 1% </h3>
+          <canvas id="dispoGauge"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Top 5 pannes récurrentes (Radar)</h3>
+          <canvas id="pannesRadar"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fadeIn">
+      <h2>Formations recommandées</h2>
+      <div class="formations">
+        <table class="table">
+          <thead>
+            <tr><th>Formation</th><th>Justification</th><th>Criticité</th></tr>
+          </thead>
+          <tbody id="formations-body"></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="kpi-navigation fadeIn">
+  <a href="/Proj.pfa/KPIs/Page d'acueil/Pa.html" class="nav-btn prev">
+    ← Précédent : Page d'accueil
+  </a>
+  <a href="/Proj.pfa/KPIs/Production/prd.html" class="nav-btn next">
+    Suivant : Production →
+  </a>
+</section>
+  <div class="back-home">
+  <a href="/Proj.pfa/KPIs/Page d'acueil/Pa.html">← Retour à l’accueil</a>
+</div>
+  </main>
+  <script src="m.js"></script>
+</body>
+</html>

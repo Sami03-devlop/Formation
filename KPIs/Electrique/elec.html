@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow">
+  <title>KPIs – Électrique & Automatisation</title>
+  <link rel="stylesheet" href="/Proj.pfa/KPIs/k.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <main class="kpi-page">
+    <header class="service-header fadeIn">
+      <div>
+        <h1>Électrique & Automatisation</h1>
+        <p>Le service Électrique & Automatisation garantit la sûreté des installations, la continuité d’énergie et l’optimisation des automatismes pour la performance de production. C'est l'un des services les plus critiques au sein d'une entreprise comme JBEL ANNOUR, où le flux de production est continu et chaque arrêt engendre des coûts très élevés.</p>
+        <span class="month-tag">Mois analysé: Juillet 2025</span>
+      </div>
+      <img src="/Proj.pfa/KPIs/images/Electrique.png" alt="Tableau électrique" />
+    </header>
+
+    <section class="section slideUp">
+      <h2>KPIs du mois</h2>
+      <div class="kpi-cards">
+        <div class="kpi-card">
+          <div class="kpi-icon">⚡</div>
+          <div class="kpi-title">Accident électriques</div>
+          <div class="kpi-value" id="incidents">—</div>
+          <div class="kpi-sub">Excellent</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon">🔌</div>
+          <div class="kpi-title">Délai remise en service</div>
+          <div class="kpi-value" id="rta">—</div>
+          <div class="kpi-sub">Intervalle de [10 min : 3h]</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon">✅</div>
+          <div class="kpi-title">Conformité installations</div>
+          <div class="kpi-value" id="conf">—</div>
+          <div class="kpi-sub">Objectif >= 90% </div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon">🔋</div>
+          <div class="kpi-title">Énergie gaspillée</div>
+          <div class="kpi-value" id="waste">—</div>
+          <div class="kpi-sub">4h de fonctionnement à vide (le moteur d'extrudeuse) </div>
+        </div>
+      </div>
+
+      <div class="charts" style="margin-top:12px;">
+        <div class="chart-card">
+          <h3>Accident par semaine (aucune)</h3>
+          <canvas id="incLine"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Jauge conformité installations</h3>
+          <canvas id="confGauge"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fadeIn">
+      <h2>Formations recommandées</h2>
+      <div class="formations">
+        <table class="table">
+          <thead>
+            <tr><th>Formation</th><th>Justification</th><th>Criticité</th></tr>
+          </thead>
+          <tbody id="formations-body"></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="kpi-navigation fadeIn">
+  <a href="/Proj.pfa/KPIs/Logistique/log.html" class="nav-btn prev">
+    ← Précédent : Logistique
+  </a>
+  <a href="/Proj.pfa/KPIs/Méthode/mét.html" class="nav-btn next">
+    Suivant : Méthode →
+  </a>
+</section>
+  <div class="back-home">
+  <a href="/Proj.pfa/KPIs/Page d'acueil/Pa.html">← Retour à l’accueil</a>
+</div>
+  </main>
+
+  <!-- Lien vers le fichier JS spécifique -->
+  <script src="elec.js"></script>
+</body>
+</html>
